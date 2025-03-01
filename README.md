@@ -76,7 +76,7 @@ CrauselFunnelNext/
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/Prateek-Fst/CrauselFunnel_Assignment.git
    cd CrauselFunnelNext/backend
    ```
 
@@ -117,7 +117,7 @@ CrauselFunnelNext/
 3. **Configure Environment Variables:**
    Create a `.env` file in `frontend/`:
    ```env
-   REACT_APP_API_URL=/api
+   REACT_APP_API_URL= url generated form tunnelmole for backend port 8000
    REACT_APP_SHOPIFY_API_KEY=<your-shopify-api-key>
    ```
    Use the same `SHOPIFY_API_KEY` as in the backend.
@@ -189,13 +189,3 @@ CrauselFunnelNext/
 
 - **GET /api/survey/data** (Authenticated)
   - Returns all survey responses for the shop.
-
-## Troubleshooting
-
-- **Form Not Visible?** Inspect DOM for `<form id="survey-form">`.
-- **API Returns HTML?** Ensure Tunnelmole is running.
-- **Tunnel Stops?** Keep it alive using:
-  ```bash
-  while true; do curl <tunnel-url>; sleep 300; done
-  ```
-
